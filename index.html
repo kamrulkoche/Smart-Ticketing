@@ -17,7 +17,7 @@
         <section id="header" class="my-5  container mx-auto lg:px-[180px]">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                    <a class="btn btn-ghost text-4xl font-extrabold bg">P-Ticket</a>
+                    <a class="btn btn-ghost text-2xl lg:text-4xl font-bold lg:font-extrabold bg">P-Ticket</a>
                 </div>
                 <div class="navbar-center text-lg font-medium hidden lg:flex ">
                     <ul class="menu menu-horizontal px-1">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="navbar-end font-bold text-xl">
                     <a
-                        class="btn text-[#1DD100] text-xl font-bold items-center px-8 py-4 pb-10 bg-[#E8FAE6] border-1 rounded-xl border-[#1DD100] hover:bg-emerald-900">Bus
+                        class="btn text-[#1DD100] text-xl font-semibold lg:font-bold items-center px-4 lg:px-8 py-2 lg:py-4 lg:pb-10 bg-[#E8FAE6] border-1 rounded-xl border-[#1DD100] hover:bg-emerald-900">Bus
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M4 17C4 17.5304 4.21071 18.0391 4.58579 18.4142C4.96086 18.7893 5.46957 19 6 19C6.53043 19 7.03914 18.7893 7.41421 18.4142C7.78929 18.0391 8 17.5304 8 17M4 17C4 16.4696 4.21071 15.9609 4.58579 15.5858C4.96086 15.2107 5.46957 15 6 15C6.53043 15 7.03914 15.2107 7.41421 15.5858C7.78929 15.9609 8 16.4696 8 17M4 17H2V6C2 5.73478 2.10536 5.48043 2.29289 5.29289C2.48043 5.10536 2.73478 5 3 5H17C18.3261 5 19.5979 5.7375 20.5355 7.05025C21.4732 8.36301 22 10.1435 22 12M8 17H16M16 17C16 17.5304 16.2107 18.0391 16.5858 18.4142C16.9609 18.7893 17.4696 19 18 19C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17M16 17C16 16.4696 16.2107 15.9609 16.5858 15.5858C16.9609 15.2107 17.4696 15 18 15C18.5304 15 19.0391 15.2107 19.4142 15.5858C19.7893 15.9609 20 16.4696 20 17M20 17H22V12M22 12H17.5L16 5M2 10H17M7 5V10M12 5V10"
@@ -43,40 +43,41 @@
         <section class="banner  container mx-auto lg:px-[180px]">
             <div class="bg-[url('./images/banner.png')] h-[550px] w-100 bg-no-repeat bg-center bg">
                 <!-- <img src="images/banner.png" alt=""> -->
-                <div class="text-center pt-10 font-extrabold text-6xl ">
-                    <h2 class="text-white  leading-[2]">End-to-End Travel with</h2>
+                <div class="text-center pt-10 font-extrabold text-5xl lg:text-6xl ">
+                    <h2 class="text-white">End-to-End Travel with</h2>
                     <h2 class="text-[#1DD100]">P Paribahan</h2>
-                    <p class="font-normal text-lg text-white font-inter leading-[1.7] py-7">Yes, you can run unit tests
+                    <p class="font-normal text-base lg:text-lg text-white font-inter leading-[1.7] py-7">Yes, you can
+                        run unit tests
                         and view the results directly within the app. The <br> integrated testing features allow for a
                         streamlined .</p>
                     <button
-                        class="bg-[#1DD100] text-black font-bold text-xl rounded-xl border-[#1DD100] hover:bg-[#4efe33] px-7 py-5">Buy
+                        class="bg-[#1DD100] text-black font-bold text-lg lg:text-xl rounded-xl border-[#1DD100] hover:bg-[#4efe33] px-4 lg:px-7 py-3 lg:py-5">Buy
                         Tickets</button>
                 </div>
-                <div class="flex gap-8 mt-16 justify-center">
-                    <div
-                        class="flex items-center font-inter gap-4 rounded-3xl border-b-4 border-[#1DD100] px-10 py-6 bg-white">
-                        <div><img src="images/people.png" alt=""></div>
-                        <div class="leading-9 ">
-                            <h2 class="font-bold text-3xl">500K+</h2>
-                            <p class="font-normal text-lg">Registered users</p>
-                        </div>
+            </div>
+            <div class="grid grid-cols-1 md:flex md:flex-row justify-between items-center lg:px-16 gap-2 -mt-14">
+                <div
+                    class="flex justify-center items-center font-inter gap-2 rounded-3xl border-b-4 border-[#1DD100] p-5 bg-white ">
+                    <div><img src="images/people.png" alt="" class="h-10"></div>
+                    <div class="leading-9 ">
+                        <h2 class="font-bold text-2xl">500K+</h2>
+                        <p class="font-normal text-lg">Registered users</p>
                     </div>
-                    <div
-                        class="flex items-center font-inter gap-4 rounded-3xl border-b-4 border-[#1DD100] px-10 py-6 bg-white">
-                        <div><img src="images/people.png" alt=""></div>
-                        <div class="leading-9 ">
-                            <h2 class="font-bold text-3xl">500K+</h2>
-                            <p class="font-normal text-lg">Registered users</p>
-                        </div>
+                </div>
+                <div
+                    class="flex justify-center items-center font-inter gap-2 rounded-3xl border-b-4 border-[#1DD100] p-5  bg-white">
+                    <div><img src="images/people.png" alt="" class="h-10"></div>
+                    <div class="leading-9 ">
+                        <h2 class="font-bold text-2xl">500K+</h2>
+                        <p class="font-normal text-lg">Registered users</p>
                     </div>
-                    <div
-                        class="flex items-center font-inter gap-4 rounded-3xl border-b-4 border-[#1DD100] px-10 py-6 bg-white">
-                        <div><img src="images/people.png" alt=""></div>
-                        <div class="leading-9 ">
-                            <h2 class="font-bold text-3xl">500K+</h2>
-                            <p class="font-normal text-lg">Registered users</p>
-                        </div>
+                </div>
+                <div
+                    class="flex justify-center items-center font-inter gap-2 rounded-3xl border-b-4 border-[#1DD100] p-5 bg-white">
+                    <div><img src="images/people.png" alt="" class="h-10"></div>
+                    <div class="leading-9 ">
+                        <h2 class="font-bold text-2xl">500K+</h2>
+                        <p class="font-normal text-lg">Registered users</p>
                     </div>
                 </div>
             </div>
@@ -85,9 +86,9 @@
 
         <!-- Coupon Code section -->
         <section class="container mx-auto lg:px-[180px]">
-            <div class="mt-40 text-black font-inter ">
+            <div class="mt-8 text-black font-inter ">
                 <h3 class="font-bold text-4xl mb-10 text-center">Best offers for you</h3>
-                <div class="flex gap-8 justify-center">
+                <div class="flex flex-col md:flex-row gap-8 justify-center">
                     <div class="flex rounded-3xl border-2 border-white px-10 bg-yellow-500 items-center">
                         <div>
                             <h2 class="font-extrabold text-2xl">15% OFF</h2>
@@ -120,10 +121,10 @@
         </section>
 
         <!-- destination section -->
-        <section class="destination font-raleway bg-[#F7F8F8] border-2 rounded-3xl border-[#1DD100] pt-24">
+        <section class="destination font-raleway bg-[#F7F8F8] border-2 rounded-3xl border-[#1DD100] pt-4">
             <div class=" container mx-auto lg:px-[180px]">
                 <div class="text-center leading-6">
-                    <h3 class="font-bold text-4xl text-black mb-5">P.H Paribahan</h3>
+                    <h3 class="font-bold text-4xl text-black mb-1">P.H Paribahan</h3>
                     <p class="font-inter">Yes, you can run unit tests and view the results directly within the app. The
                         integrated
                         <br>testing
@@ -131,22 +132,23 @@
                     </p>
                 </div>
                 <!-- tickets header -->
-                <div class="flex mt-8 items-center border-1 rounded-2xl bg-white ">
-                    <div class=" w-4/5 p-6">
-                        <div class=" flex justify-between mb-2 p-2 ">
-                            <div class="flex gap-5 items-center ">
-                                <img src="images/bus-logo.png" alt="" class="h-12 w-16">
-                                <div class="">
-                                    <h2 class="font-bold text-3xl">Greenline Paribahan</h2>
-                                    <p class="font-inter">Coach-009-WEB ! AC_Business</p>
-                                </div>
-                            </div>
-                            <div
-                                class="btn text-[#1DD100] text-xl font-medium items-center px-2 py-4 pb-10 bg-[#f9fafafb] border-1 rounded-xl border-[#1DD100] hover:bg-emerald-900 font-inter">
-                                <img src="images/seat-green-filled.png" alt="">
-                                <p>40 Seats left</p>
-                            </div>
+                <div class=" flex justify-between my-4 p-2  ">
+                    <div class="flex gap-5 items-center ">
+                        <img src="images/bus-logo.png" alt="" class="h-8 md:h-12 md:w-16">
+                        <div class="">
+                            <h2 class="font-bold text-xl md:text-3xl">Greenline Paribahan</h2>
+                            <p class="font-inter text-base">Coach-009-WEB ! <br> AC_Business</p>
                         </div>
+                    </div>
+                    <div
+                        class="btn text-[#1DD100] text-xs md:text-xl font-medium items-center px-2 md:py-4 md:pb-10 bg-[#f9fafafb] border-1 rounded-xl border-[#1DD100] hover:bg-emerald-900 font-inter me-4">
+                        <img src="images/seat-green-filled.png" alt="">
+                        <p>40 Seats left</p>
+                    </div>
+                </div>
+                <div class="flex items-center border-1 rounded-2xl bg-white mt-4 ">
+
+                    <div class=" w-4/5 p-6">
                         <div class=" bg-[#F7F8F8] p-4 rounded-2xl ">
                             <div class="flex justify-between border-b-2 border-[#767677] border-dotted ">
                                 <p class="text-[#202022] text-lg font-normal pb-2 ">Route</p>
@@ -156,14 +158,14 @@
                                 <p class="text-[#202022] text-lg font-normal pb-2 ">Departure Time</p>
                                 <p class="text-black text-xl font-semibold">9:00 PM</p>
                             </div>
-                            <div class="flex justify-between mt-3">
+                            <div class="grid xl:flex xl:justify-between gap-4 items-center mt-3">
                                 <button class="btn btn-active">Boarding Point - Laxmipur</button>
                                 <button class="btn btn-active">Dropping Point - Bogura</button>
                                 <button class="btn btn-active">Est. Time - 11 Hour</button>
                             </div>
                         </div>
                     </div>
-                    <img src="images/info-devider.png" alt="" class="h-96">
+                    <img src="images/info-devider.png" alt="" class="h-96 hidden">
                     <div class="flex flex-col justify-center gap-2 p-6">
                         <img src="images/fare.png" alt="" class="w-10">
                         <h3 class="text-3xl font-semibold">550 Taka</h3>
@@ -175,15 +177,14 @@
 
             <!-- Select Seat -->
             <div class="container mx-auto lg:px-[180px] my-5">
-                <div class="bg-white p-6 border-1 rounded-2xl flex gap-10 ">
-
-                    <div class="basis-1/2">
-                        <h3 class="text-2xl font-semibold mb-4 border-b-2 border-[#767677] border-dotted leading-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 border-1 rounded-2xl ">
+                        <h3 class="text-2xl font-semibold mb-4 border-b-2 border-[#767677] border-dotted leading-10 ">
                             Select
                             Your
                             Seat</h3>
-                        <div class="flex justify-between  border-b-2 border-[#767677] border-dotted leading-10">
-                            <div class="flex items-center gap-3 mb-6">
+                        <div class="flex flex-1 justify-between border-b-2 border-[#767677] border-dotted leading-10">
+                            <div class="flex items-center gap-3">
                                 <img src="images/seat-gray.png" alt="">
                                 <p class="text-xl font-medium ">Available</p>
                             </div>
@@ -192,6 +193,8 @@
                                 <p class="text-xl font-medium text-[#1DD100]">Selected</p>
                             </div>
                         </div>
+
+
                         <div class="mt-5 font-inter text-base font-normal ">
                             <div class="grid grid-cols-5 gap-4 ">
                                 <div class="col-span-5 flex flex-row-reverse  ">
@@ -255,16 +258,15 @@
                                 <p class="px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">J2</p>
                                 <p class="px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">J3</p>
                                 <p class="px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">J4</p>
-
                             </div>
                         </div>
-                    </div>
-                    <div class="border-s-2 mt-4 border-[#767677] border-dotted leading-10">
+
+
 
                     </div>
 
-                    <div class="basis-1/2 ">
-                        <h3 class="text-2xl font-semibold mb-4 leading-10">
+                    <div class="lg:border-s-2 md:ps-8 border-[#767677] border-dotted leading-10 mx-2 md:mx-0 ">
+                        <h3 class="text-2xl font-semibold leading-10 px-4 md:px-0">
                             Select
                             Your
                             Seat</h3>
@@ -298,14 +300,12 @@
                                             <td></td>
                                             <td>BDT 1100</td>
                                         </tr>
-                                        <tr>
-                                            <td><input type="text" placeholder="Have any copupon?"
-                                                    class="input w-full max-w-xs" /></td>
-                                            <td></td>
-                                            <td><button
-                                                    class="btn bg-[#1DD100] text-white border-0 hover:bg-[#23f303] text-lg font-semibold">Apply</button>
-                                            </td>
-                                        </tr>
+                                        <div class="flex gap-3">
+                                            <input type="text" placeholder="Have any copupon?"
+                                                class="input w-full flex flex-1" />
+                                            <button
+                                                class="btn bg-[#1DD100] text-white border-0 hover:bg-[#23f303] text-lg font-semibold">Apply</button>
+                                        </div>
                                         <tr>
                                             <td>Grand Total</td>
                                             <td></td>
@@ -316,21 +316,21 @@
                                 </table>
                             </div>
                         </div>
+
                         <div class="text-lg font-semibold font-inter bg-white mt-10 ">
                             <div class="my-6">
                                 <h2 class="mb-3">Passenger Name*</h2>
-                                <input type="text" placeholder="Enter your name"
-                                    class="input input-bordered w-full max-w-xs" />
-                            </div>
-                            <div class="my-6">
-                                <h2 class="mb-3">Phone Number*</h2>
-                                <input type="text" placeholder="Enter your phone number"
-                                    class="input input-bordered w-full max-w-xs" />
+                                <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
                             </div>
                             <div class="my-6">
                                 <h2 class="mb-3">Email ID</h2>
                                 <input type="text" placeholder="Enter your email id"
-                                    class="input input-bordered w-full max-w-xs" />
+                                    class="input input-bordered w-full" />
+                            </div>
+                            <div class="my-6">
+                                <h2 class="mb-3">Email ID</h2>
+                                <input type="text" placeholder="Enter your email id"
+                                    class="input input-bordered w-full" />
                             </div>
                             <div>
                                 <button
@@ -342,7 +342,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
         </section>
+
     </main>
 </body>
 
