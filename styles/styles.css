@@ -8,6 +8,9 @@
     font-family: "Inter", sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
 
 /* .banner-img {
     background-image: url('../images/banner.png');
