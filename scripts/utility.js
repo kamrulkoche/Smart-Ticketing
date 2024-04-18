@@ -42,3 +42,34 @@ function setBackgroundColorById(elementId) {
   const element = document.getElementById(elementId);
   element.classList.add("bg-[#1DD100]");
 }
+
+
+function setTextElementValueByID(elementId, value) {
+  const element = document.getElementById(elementId, value);
+  element.innerText = value;
+}
+
+function getElementTextById(elementId) {
+  const element = document.getElementById(elementId);
+  const text = element.innerText;
+  return text;
+}
+
+
+function disable(elementClass) {
+  let element = document.querySelectorAll(elementClass);
+  for (let i = 0; i < element.length; i++) {
+    //element[i].classList.add("bg-red-400")
+    if (totalClickCount === 4) {
+      element[i].style.pointerEvents = 'none'; // Disable click events
+    }
+  }
+}
+
+function btnColor(e) {
+  console.log(e.target.innerHTML);
+  e.target.classList.add("bg-red-600");
+  e.target.classList.add("hover:bg-red-700");
+  e.target.classList.add("text-white");
+
+}

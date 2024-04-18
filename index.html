@@ -18,9 +18,6 @@
 <body>
     <main class="font-raleway ">
 
-        <p>If you click on me, I will disappear.</p>
-        <p>Click me away!</p>
-        <p>Click me too!</p>
 
         <section id="header" class="lg:my-5 container mx-auto lg:px-[180px]">
             <div class="flex justify-between items-center px-4 bg-white">
@@ -239,10 +236,10 @@
                                 </div>
                                 <p class="px-2 py-4 text-center">A</p>
                                 <button id="A1"
-                                    class="seat px-2 py-4 bg-[#bfbfbf] text-center rounded-lg hover:bg-slate-400">A1</button>
-                                <p class="px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">A2</p>
-                                <p class="px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">A3</p>
-                                <p class="px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">A4</p>
+                                    class="btnSeat seat px-2 py-4 bg-[#bfbfbf] text-center rounded-lg ">A1</button>
+                                <p class="btnSeat px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">A2</p>
+                                <p class="btnSeat px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">A3</p>
+                                <p class="btnSeat px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">A4</p>
                                 <p class="px-2 py-4 text-center">B</p>
                                 <p class="px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">B1</p>
                                 <p class="px-2 py-4 bg-[#bfbfbf] text-center rounded-lg">B2</p>
@@ -306,8 +303,8 @@
                                     <thead class="text-lg font-medium font-inter ">
                                         <tr>
                                             <th>
-                                                Seat <span
-                                                    class="text-sm font-bold p-1 rounded-lg bg-[#1DD100]">2</span>
+                                                Seat <span id="total-seat"
+                                                    class="text-sm font-bold p-1 rounded-lg bg-[#1DD100]">0</span>
                                             </th>
                                             <th>Class</th>
                                             <th>Price</th>
@@ -315,31 +312,43 @@
                                     </thead>
                                     <tbody class="text-lg font-medium font-inter">
                                         <tr>
-                                            <td>C2</td>
+                                            <td><span id="seat-1"></span></td>
                                             <td>Economoy</td>
                                             <td>550</td>
                                         </tr>
                                         <tr>
-                                            <td>C2</td>
+                                            <td><span id="seat-2"></span></td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span id="seat-3"></span></td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span id="seat-4"></span></td>
                                             <td>Economoy</td>
                                             <td>550</td>
                                         </tr>
 
+
                                         <tr class=" border-t-2 border-[#99999a]">
                                             <td>Total price</td>
                                             <td></td>
-                                            <td>BDT 1100</td>
+                                            <td>BDT <span id="total-price">0</span> </td>
                                         </tr>
                                         <div class="flex gap-3">
-                                            <input type="text" placeholder="Have any copupon?"
+                                            <input id="apply-text" type="text" placeholder="Have any copupon?"
                                                 class="input w-full flex flex-1" />
-                                            <button
-                                                class="btn bg-[#1DD100] text-white border-0 hover:bg-[#23f303] text-lg font-semibold">Apply</button>
+                                            <button onclick="apply()"
+                                                class="btn bg-[#1DD100] text-white border-0 hover:bg-[#23f303] text-lg font-semibold"
+                                                type="submit" value="Submit">Apply</button>
                                         </div>
                                         <tr>
                                             <td>Grand Total</td>
                                             <td></td>
-                                            <td>BDT 1100</td>
+                                            <td>BDT <span id="grand-total">0</span></td>
                                         </tr>
                                     </tbody>
 
