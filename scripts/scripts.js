@@ -15,6 +15,7 @@ function closeMenu() {
 
 //make selection
 const all_buttons = document.querySelectorAll(".btnSeat");
+const container = document.getElementById("seat-details");
 const ticketPrice = 550;
 let totalClickCount = 1;
 let updatedTotalPrice = 0;
@@ -33,24 +34,40 @@ for (let i = 0; i < all_buttons.length; i++) {
   const bt = all_buttons[i];
   let clickCount = 0;
   bt.addEventListener('click', (e) => {
+    const tr = document.createElement("tr");
+
+    // Create three table data elements and set their content
+    const td1 = document.createElement("td");
+    const td2 = document.createElement("td");
+    const td3 = document.createElement("td");
+
+
+    td1.textContent = e.target.innerHTML; // You can set the content of the first cell as needed
+    td2.textContent = "Economy";
+    td3.textContent = ticketPrice;
+
+    // Append table data elements to the table row
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+
+    // Append table row to the container
+    container.appendChild(tr);
+
+
     clickCount++;
     const buttonValue = e.target.innerHTML;
     seats.push(buttonValue);
     console.log(seats);
-    setTextElementValueByID("seat-1", seats[0]);
-    setTextElementValueByID("seat-2", seats[1]);
-    setTextElementValueByID("seat-3", seats[2]);
-    setTextElementValueByID("seat-4", seats[3]);
     console.log(buttonValue);
     updateTotalClickCount();
     console.log(totalClickCount);
     setTextElementValueByID("total-seat", totalClickCount);
-    console.log("fsfs", totalClickCount);
+    //console.log("fsfs", totalClickCount);
     disable(".btnSeat");
     btnColor(e);
     totalClickCount++;
   });
-
 }
 
 function apply() {
@@ -73,14 +90,3 @@ function apply() {
   }
 
 }
-
-// let elements = document.getElementsByClassName('btnSeat');
-// console.log(elements); // Outputs a live HTMLCollection
-// for (let i = 0; i < elements.length; i++) {
-//   elements[i].classList.add("hover:bg-slate-400");
-//   if (8 === 4) {
-//     elements[i].style.pointerEvents = 'none'; // Disable click events
-//     elements[i].removeAttribute('onclick');
-//   }
-// }
-
