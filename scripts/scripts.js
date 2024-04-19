@@ -116,7 +116,7 @@ function validation(name, phone) {
     alert("Name must contain only letters");
     return false;
   }
-  else if (phone.length !== 1) {
+  else if (phone.length !== 11) {
     alert("Phone number must be 11 characters long");
     return false;
   }
