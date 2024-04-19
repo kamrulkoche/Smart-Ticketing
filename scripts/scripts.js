@@ -125,7 +125,7 @@ function validation(name, phone) {
 
 }
 
-function finished() {
-  hideElementById("success");
-  showElementById("first-page");
-}
+// function finished() {
+//   hideElementById("success");
+//   showElementById("first-page");
+// }
