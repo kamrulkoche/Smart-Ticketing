@@ -23,7 +23,7 @@ function updateTotalClickCount() {
   //const totalPrice = document.getElementById('total-price');
   //console.log(totalPrice.innerText);
   updatedTotalPrice = totalClickCount * ticketPrice;
-  console.log(updatedTotalPrice);
+  //console.log(updatedTotalPrice);
   setTextElementValueByID("total-price", updatedTotalPrice);
   setTextElementValueByID("grand-total", updatedTotalPrice)
   //return updatedTotalPrice;
@@ -58,10 +58,10 @@ for (let i = 0; i < all_buttons.length; i++) {
     clickCount++;
     const buttonValue = e.target.innerHTML;
     seats.push(buttonValue);
-    console.log(seats);
-    console.log(buttonValue);
+    //console.log(seats);
+    //console.log(buttonValue);
     updateTotalClickCount();
-    console.log(totalClickCount);
+    //console.log(totalClickCount);
     setTextElementValueByID("total-seat", totalClickCount);
     //console.log("fsfs", totalClickCount);
     disable(".btnSeat");
@@ -73,7 +73,7 @@ for (let i = 0; i < all_buttons.length; i++) {
 function apply() {
   const text = document.getElementById("apply-text");
   const applyText = text.value;
-  console.log(applyText);
+  //console.log(applyText);
   if (applyText == "NEW15") {
     const discount = updatedTotalPrice * 0.15;
     //console.log(discount);
@@ -89,4 +89,43 @@ function apply() {
     setTextElementValueByID("grand-total", updatedTotalPrice)
   }
 
+}
+
+
+function next() {
+  const passengerName = document.getElementById("passenger-name");
+  const phoneNumber = document.getElementById("phone-number");
+  const email = document.getElementById("email");
+  const name = passengerName.value;
+  const phone = phoneNumber.value;
+  const mail = email.value;
+  console.log(name);
+  console.log(phone);
+  console.log(mail);
+  validation(name, phone);
+}
+
+
+function validation(name, phone) {
+  let letters = /^[A-Za-z]+$/;
+  if (name == null || name == String || name == "") {
+    alert("Name can't be blank");
+    return false;
+  }
+  else if (!name.match(letters)) {
+    alert("Name must contain only letters");
+    return false;
+  }
+  else if (phone.length !== 1) {
+    alert("Phone number must be 11 characters long");
+    return false;
+  }
+  hideElementById("first-page");
+  showElementById("success");
+
+}
+
+function finished() {
+  hideElementById("success");
+  showElementById("first-page");
 }

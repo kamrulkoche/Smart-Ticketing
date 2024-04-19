@@ -67,7 +67,7 @@ function disable(elementClass) {
 }
 
 function btnColor(e) {
-  console.log(e.target.innerHTML);
+  //console.log(e.target.innerHTML);
   e.target.classList.add("bg-red-600");
   e.target.classList.add("hover:bg-red-700");
   e.target.classList.add("text-white");
