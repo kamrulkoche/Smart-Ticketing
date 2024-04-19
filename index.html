@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <main class="font-raleway ">
+    <main class="font-raleway bg-white ">
         <section id="first-page" class="">
             <section id="header" class="lg:my-5 container mx-auto lg:px-[180px]">
                 <div class="flex justify-between items-center px-4 bg-white">
@@ -39,19 +39,19 @@
                     <div class="navbar-start hidden lg:flex">
                         <a class="btn btn-ghost text-4xl font-extrabold ">P-Ticket</a>
                     </div>
-                    <div class=" text-xl font-extrabold w-full lg:w-96">
+                    <div class=" text-xl font-extrabold w-full lg:w-96 ">
                         <ul id="navMenu" class="gap-2 px-1 grid lg:flex lg:ms-0 hidden  ">
                             <li><a href="#home"><button
-                                        class="btn btn-block bg-gray-200 border-gray-300 border-2 hover:bg-slate-700 hover:text-white text-base font-bold">Home</button></a>
+                                        class="btn btn-block bg-gray-200 border-gray-300 border-2 hover:bg-slate-700 text-black hover:text-white text-base font-bold ">Home</button></a>
                             </li>
                             <li><a href="#about"><button
-                                        class="btn btn-block bg-gray-200 border-gray-300 border-2 hover:bg-slate-700 hover:text-white text-base font-bold">About</button></a>
+                                        class="btn btn-block bg-gray-200 border-gray-300 border-2 hover:bg-slate-700 text-black hover:text-white text-base font-bold">About</button></a>
                             </li>
                             <li><a href="#destination"><button
-                                        class="btn btn-block bg-gray-200 border-gray-300 border-2 hover:bg-slate-700 hover:text-white text-base font-bold">Destination</button></a>
+                                        class="btn btn-block bg-gray-200 border-gray-300 border-2 hover:bg-slate-700 text-black hover:text-white text-base font-bold">Destination</button></a>
                             </li>
                             <li><a href="#search"><button
-                                        class="btn btn-block bg-gray-200 border-gray-300 border-2 hover:bg-slate-700 hover:text-white text-base font-bold">Search</button></a>
+                                        class="btn btn-block bg-gray-200 border-gray-300 border-2 hover:bg-slate-700 text-black hover:text-white text-base font-bold">Search</button></a>
                             </li>
 
                         </ul>
@@ -186,10 +186,12 @@
                                     <p class="text-[#202022] text-lg font-normal pb-2 ">Departure Time</p>
                                     <p class="text-black text-xl font-semibold">9:00 PM</p>
                                 </div>
-                                <div class="grid xl:flex xl:justify-between gap-4 items-center mt-3">
-                                    <button class="btn btn-active">Boarding Point - Laxmipur</button>
-                                    <button class="btn btn-active">Dropping Point - Bogura</button>
-                                    <button class="btn btn-active">Est. Time - 11 Hour</button>
+                                <div class="grid xl:flex xl:justify-between gap-4 items-center mt-3 ">
+                                    <button class="btn btn-active text-black bg-gray-300">Boarding Point -
+                                        Laxmipur</button>
+                                    <button class="btn btn-active text-black bg-gray-300">Dropping Point -
+                                        Bogura</button>
+                                    <button class="btn btn-active text-black bg-gray-300">Est. Time - 11 Hour</button>
                                 </div>
                             </div>
                         </div>
@@ -314,7 +316,7 @@
                                         <tbody id="seat-details" class="seat-details text-lg font-medium font-inter">
                                             <div class="flex gap-3">
                                                 <input id="apply-text" type="text" placeholder="Have any copupon?"
-                                                    class="input w-full flex flex-1" />
+                                                    class="input w-full flex flex-1 bg-white text-black" />
                                                 <button onclick="apply()"
                                                     class="btn bg-[#1DD100] text-white border-0 hover:bg-[#23f303] text-lg font-semibold"
                                                     type="submit" value="Submit">Apply</button>
@@ -340,18 +342,18 @@
                                 <div class="my-6">
                                     <h2 class="mb-3">Passenger Name*</h2>
                                     <input id="passenger-name" type="text" placeholder="Enter your name"
-                                        class="input input-bordered w-full" />
+                                        class="input input-bordered w-full bg-white text-black" />
                                 </div>
                                 <div class="my-6">
                                     <h2 class="mb-3">Phone Number*</h2>
                                     <input id="phone-number" type="number" placeholder="Enter your phone number"
-                                        class="input input-bordered w-full" />
+                                        class="input input-bordered w-full  bg-white text-black" />
 
                                 </div>
                                 <div class="my-6">
                                     <h2 class="mb-3">Email ID</h2>
                                     <input id="email" type="email" placeholder="Enter your email id"
-                                        class="input input-bordered w-full" />
+                                        class="input input-bordered w-full  bg-white text-black" />
                                 </div>
                                 <div>
                                     <button onclick="next()"
