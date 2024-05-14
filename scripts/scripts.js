@@ -25,22 +25,23 @@ function updateTotalClickCount() {
   updatedTotalPrice = totalClickCount * ticketPrice;
   //console.log(updatedTotalPrice);
   setTextElementValueByID("total-price", updatedTotalPrice);
-  setTextElementValueByID("grand-total", updatedTotalPrice)
+  setTextElementValueByID("grand-total", updatedTotalPrice);
   //return updatedTotalPrice;
 }
 
 const seats = [];
+
 for (let i = 0; i < all_buttons.length; i++) {
   const bt = all_buttons[i];
   let clickCount = 0;
-  bt.addEventListener('click', (e) => {
+
+  bt.addEventListener("click", (e) => {
     const tr = document.createElement("tr");
 
     // Create three table data elements and set their content
     const td1 = document.createElement("td");
     const td2 = document.createElement("td");
     const td3 = document.createElement("td");
-
 
     td1.textContent = e.target.innerHTML; // You can set the content of the first cell as needed
     td2.textContent = "Economy";
@@ -54,8 +55,8 @@ for (let i = 0; i < all_buttons.length; i++) {
     // Append table row to the container
     container.appendChild(tr);
 
-
     clickCount++;
+    // console.log(clickCount);
     const buttonValue = e.target.innerHTML;
     seats.push(buttonValue);
     //console.log(seats);
@@ -67,6 +68,7 @@ for (let i = 0; i < all_buttons.length; i++) {
     disable(".btnSeat");
     btnColor(e);
     totalClickCount++;
+    // console.log(totalClickCount);
   });
 }
 
@@ -76,22 +78,18 @@ function apply() {
   //console.log(applyText);
   if (applyText == "NEW15") {
     const discount = updatedTotalPrice * 0.15;
-    const discountPrice=updatedTotalPrice-discount;
-    setTextElementValueByID("grand-total", discountPrice)
-  }
-  else if (applyText == "Couple20") {
+    const discountPrice = updatedTotalPrice - discount;
+    setTextElementValueByID("grand-total", discountPrice);
+  } else if (applyText == "Couple20") {
     const discount = updatedTotalPrice * 0.2;
     //console.log(discount);
-    const discountPrice=updatedTotalPrice-discount;
-    setTextElementValueByID("grand-total", discountPrice)
-  }
-  else {
+    const discountPrice = updatedTotalPrice - discount;
+    setTextElementValueByID("grand-total", discountPrice);
+  } else {
     //console.log("Wrong Code");
-    setTextElementValueByID("grand-total", updatedTotalPrice)
+    setTextElementValueByID("grand-total", updatedTotalPrice);
   }
-
 }
-
 
 function next() {
   const passengerName = document.getElementById("passenger-name");
@@ -106,24 +104,20 @@ function next() {
   validation(name, phone);
 }
 
-
 function validation(name, phone) {
   let letters = /^[A-Za-z]+$/;
   if (name == null || name == String || name == "") {
     alert("Name can't be blank");
     return false;
-  }
-  else if (!name.match(letters)) {
+  } else if (!name.match(letters)) {
     alert("Name must contain only letters");
     return false;
-  }
-  else if (phone.length !== 11) {
+  } else if (phone.length !== 11) {
     alert("Phone number must be 11 characters long");
     return false;
   }
   hideElementById("first-page");
   showElementById("success");
-
 }
 
 // function finished() {
