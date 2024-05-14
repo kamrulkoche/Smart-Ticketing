@@ -76,13 +76,14 @@ function apply() {
   //console.log(applyText);
   if (applyText == "NEW15") {
     const discount = updatedTotalPrice * 0.15;
-    //console.log(discount);
-    setTextElementValueByID("grand-total", discount)
+    const discountPrice=updatedTotalPrice-discount;
+    setTextElementValueByID("grand-total", discountPrice)
   }
   else if (applyText == "Couple20") {
     const discount = updatedTotalPrice * 0.2;
     //console.log(discount);
-    setTextElementValueByID("grand-total", discount)
+    const discountPrice=updatedTotalPrice-discount;
+    setTextElementValueByID("grand-total", discountPrice)
   }
   else {
     //console.log("Wrong Code");
